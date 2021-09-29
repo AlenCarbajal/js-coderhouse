@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=es>
+
+<head>
+    <title>Entregable 2 - Carbajal</title>
+    <script>
+        // Declaracion de variables y solicitud por prompt
+        let nombre = prompt("Ingrese su nombre");
+        let apellido = prompt("Ingrese su apellido");
+        let edad = parseInt(prompt("Ingrese su edad"));
+
+        // Chequeo que edad sea un numero valido
+        if (isNaN(edad) || edad < 0)
+            alert("La edad introducidad no es un número válido.");
+        else if (nombre == null || apellido == null) {
+            alert("¡Ingresa tu nombre y apellido completos!");
+        }
+        else {
+            anio = new Date().getFullYear();
+            let salida = `Sos ${nombre} ${apellido}, tenés ${edad} años y naciste entre ${anio - edad - 1} y ${anio - edad}`;
+            alert(salida);
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Buenasss!</h2>
+</body>
+
+</html>
